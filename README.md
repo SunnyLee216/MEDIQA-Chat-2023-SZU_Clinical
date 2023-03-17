@@ -8,6 +8,7 @@ error raise, when pip install deepspeed:
 error: subprocess-exited-with-error
 
   × python setup.py egg_info did not run successfully.
+ We only complete the taskB, the procedure shout be:
 
 ```
 bash ./install.sh
@@ -20,5 +21,5 @@ bash decode_taskB_run3.sh ./MEDIQA-Chat-TestSets-March-15-2023/TaskB/taskB_tests
 
 the [./MEDIQA-Chat-TestSets-March-15-2023/TaskB/taskB_testset.csv] is where I put the Testset
 
-. It can be changed.
+
 
