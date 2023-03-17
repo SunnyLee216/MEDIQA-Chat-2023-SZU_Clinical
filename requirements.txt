@@ -1,0 +1,11 @@
+deepspeed==0.8.3+457850dc
+pandas==1.5.2
+py_sled==0.1.7
+pytorch_lightning==1.9.2
+scikit_learn==1.2.2
+sled==0.0.4
+torch==1.13.1
+torch_optimizer==0.3.0
+torchmetrics==0.11.1
+tqdm==4.64.1
+transformers==4.24.0
