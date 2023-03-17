@@ -5,7 +5,7 @@ After traning The pl moudel will produce checkpoin file in folder: output/lightn
 
 However, due to my negligence, I had only conducted experiments in a conda environment before. **My experiments mainly used deepspeed, but I found that it could not be installed successfully via a Python virtual environment, so install.sh failed to install deepspeed, though I have completed the experiments on my local conda environment.** 
 
-Our code is simply fine-tuned and the results are reliable.It's easy to reproduce the outcome on a conda environment. **Unfortunately, due to time constraints, I am unable to modify the code. I am very sorry.**
+Our code is simply fine-tuned and the results are reliable.It's easy to reproduce the outcome on a conda environment. **Unfortunately, due to time constraints, I am unable to modify the code. I am very sorry. Nevertheless, I submitted it.** 
 
 error raise, when pip install deepspeed:
 
