@@ -11,7 +11,7 @@ fi
 input_csv=$1
 output_csv="./outputs_run/taskB_SZU_Clinical_run2.csv"
 # HPI
-python long_training.py --gpus 1 --strategy deepspeed_stage_2 --precision bf16 --max_input_length 10000 --max_output_length 2700 --is_split "HISTORY OF PRESENT ILLNESS" --pretrained_model google/long-t5-tglobal-base --is_test True --checkpoint ./output/lightning_logs/vesion_0/checkpoints/best.ckpt --test_file $input_csv  
+python long_training.py --gpus 1 --strategy deepspeed_stage_2 --precision bf16 --max_input_length 10000 --max_output_length 2500 --is_split "HISTORY OF PRESENT ILLNESS" --pretrained_model google/long-t5-tglobal-base --is_test True --checkpoint ./output/lightning_logs/vesion_0/checkpoints/best.ckpt --test_file $input_csv  
 
 # # # PHYSICAL 
 
@@ -22,6 +22,6 @@ python long_training.py --gpus 1 --strategy deepspeed_stage_2 --precision bf16 -
 
 # # # ASSESSMENT
 
-python long_training.py --gpus 1 --strategy deepspeed_stage_2 --precision bf16 --max_input_length 10000 --max_output_length 2700 --is_split "ASSESSMENT AND PLAN" --pretrained_model google/long-t5-tglobal-base --is_test True --checkpoint ./output/lightning_logs/vesion_3/checkpoints/best.ckpt --test_file $input_csv
+python long_training.py --gpus 1 --strategy deepspeed_stage_2 --precision bf16 --max_input_length 10000 --max_output_length 2000 --is_split "ASSESSMENT AND PLAN" --pretrained_model google/long-t5-tglobal-base --is_test True --checkpoint ./output/lightning_logs/vesion_3/checkpoints/best.ckpt --test_file $input_csv
 
 python merge.py $input_csv $output_csv
