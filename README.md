@@ -17,6 +17,7 @@ error: subprocess-exited-with-error
 ```
 bash ./install.sh
 source ./activate.sh
+bash ./clone_and_move.sh
 bash decode_taskB_run1.sh ./MEDIQA-Chat-TestSets-March-15-2023/TaskB/taskB_testset.csv
 bash decode_taskB_run2.sh ./MEDIQA-Chat-TestSets-March-15-2023/TaskB/taskB_testset.csv
 bash decode_taskB_run3.sh ./MEDIQA-Chat-TestSets-March-15-2023/TaskB/taskB_testset.csv
